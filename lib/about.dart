@@ -34,7 +34,7 @@ Future<void> aboutBubble(BuildContext context) {
                 SizedBox(height: 10),
                 Row(children: [
                   Icon(Icons.phone, size: 20,),
-                  SelectableText("+2348154240749"),
+                  SelectableText("+234xxxxxxxxx"),
                 ],)
                 
               ],
