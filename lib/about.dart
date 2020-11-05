@@ -3,7 +3,7 @@ import 'package:url_launcher/url_launcher.dart';
 
 Future<void> aboutBubble(BuildContext context) {
   makeCall() async {
-    const number = 'tel:+2349039197553';
+    const number = 'tel:+234xxxxxxxxxx';
     if (await canLaunch(number)) {
       await launch(number);
     } else {
@@ -74,7 +74,7 @@ Future<void> aboutBubble(BuildContext context) {
                       padding: EdgeInsets.all(8),
                       child: GestureDetector(
                         child: Text(
-                          "+2349039197553",
+                          "+2349xxxxxxxxxx",
                           style: TextStyle(
                               color: Colors.blue, fontWeight: FontWeight.w600),
                         ),
