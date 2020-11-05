@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:project_one/ui/info_page.dart';
 import 'package:splashscreen/splashscreen.dart';
+import 'package:firebase_core/firebase_core.dart';
 
-void main() => runApp(MaterialApp(
+void main() async{ 
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
+  runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
   home: App(),
   routes: <String, WidgetBuilder>{
@@ -10,6 +14,7 @@ void main() => runApp(MaterialApp(
         '/screen2': (BuildContext context) => InfoPage()
       },
 ));
+}
 
 class App extends StatelessWidget{
   @override
